@@ -16,6 +16,10 @@
         <relativePath />
     </parent>
 
+    <build>
+        <finalName>${project.artifactId}</finalName>
+    </build>
+
     <dependencyManagement>
 
     </dependencyManagement>
