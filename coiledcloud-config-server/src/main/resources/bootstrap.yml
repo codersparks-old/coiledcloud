@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: CC_CONFIGSERVER
+  cloud:
+    config:
+      enabled: false
