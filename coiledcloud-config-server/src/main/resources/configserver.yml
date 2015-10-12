@@ -7,3 +7,9 @@ spring:
       server:
         git:
           uri: https://github.com/codersparks/coiledcloud-config-repo
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
