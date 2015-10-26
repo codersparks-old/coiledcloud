@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: CC_PYTHONFLASKHELLO
+  profiles:
+    active: 'DEV'

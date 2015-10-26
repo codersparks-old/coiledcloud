@@ -14,6 +14,10 @@
         <module>coiledcloud-config-server</module>
         <module>coiledcloud-discovery-service</module>
         <module>coiledcloud-user-service</module>
+        <module>coiledcloud-rest2amqp</module>
+        <module>coiledcloud-data</module>
+        <module>coiledcloud-zuul</module>
+        <module>coiledcloud-pythonflaskhello-sidecar</module>
     </modules>
 
 

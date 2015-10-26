@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: CC_REST2AMQP
+  profiles:
+    active: 'DEV'
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        serviceId: CC_CONFIGSERVER
+      failFast: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

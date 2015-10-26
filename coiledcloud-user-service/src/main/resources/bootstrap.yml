@@ -2,4 +2,4 @@ spring:
   application:
     name: CC_USERSERVICE
   profiles:
-    active: DEV
+    active: 'DEV'
