@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<jxb:bindings version="1.0"
+	xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+	xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+	xmlns:annox="http://annox.dev.java.net"
+	jxb:extensionBindingPrefixes="xjc annox"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<jxb:globalBindings>
+		<xjc:simple/>
+		<jxb:javaType name="java.util.Calendar" xmlType="xs:dateTime" parseMethod="javax.xml.bind.DatatypeConverter.parseDate" printMethod="javax.xml.bind.DatatypeConverter.printDate"/>
+	</jxb:globalBindings>
+	<jxb:bindings schemaLocation="ProcessRequestType.xsd" node="/xs:schema">
+		<jxb:bindings node="xs:complexType/xs:sequence/xs:element[@name='id']">
+			<annox:annotate target="field">@org.springframework.data.annotation.Id</annox:annotate>
+		</jxb:bindings>
+	</jxb:bindings>
+	<jxb:bindings schemaLocation="ProcessRequest.xsd" node="/xs:schema">
+		<jxb:bindings node="xs:element[@name='ProcessRequest']">
+			<annox:annotate target="class">@org.springframework.data.mongodb.core.mapping.Document(collection="ProcessRequest")</annox:annotate>
+		</jxb:bindings>
+	</jxb:bindings>
+</jxb:bindings>

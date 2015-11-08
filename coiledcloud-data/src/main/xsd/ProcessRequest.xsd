@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2016 (http://www.altova.com) by Ray (Dom) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" xmlns:pr="http://github.com/codersparks/process/v0.0.1" targetNamespace="http://github.com/codersparks/process/v0.0.1" elementFormDefault="qualified" attributeFormDefault="unqualified" vc:minVersion="1.1" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+     xmlns:annox="http://annox.dev.java.net" 
+    jaxb:extensionBindingPrefixes="annox">
+	<xs:include schemaLocation="ProcessRequestType.xsd"/>
+	<xs:element name="ProcessRequest" type="pr:ProcessRequestType">
+		<xs:annotation>
+			<xs:documentation>A single process Request</xs:documentation>
+			<xs:appinfo>
+				<annox:annotate>@java.lang.SuppressWarnings({"unchecked","rawtypes"})</annox:annotate>
+			</xs:appinfo>
+		</xs:annotation>
+	</xs:element>
+</xs:schema>
